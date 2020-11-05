@@ -1,0 +1,73 @@
+.skills {
+  padding: 4rem;
+  background: tomato;
+}
+
+.skills-heading {
+  font-size: 40px;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px 30px 10px;
+  text-decoration: underline overline;
+  text-decoration-color: #fdfd96;
+  text-decoration-thickness: 6px;
+}
+
+.skills-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+}
+
+.skill-item {
+  padding: 10px 5px 10px 5px;
+}
+
+.skills-items {
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+}
+
+.skill-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 10px;
+  border: 5px solid rgba(255, 99, 71, 0.637);
+  transition: transform 0.2s; /* Animation */
+}
+
+.skill-image:hover {
+  transform: scale(1.1);
+  border: 5px solid #fdfd96;
+}
+
+/* Hanlde Screen sizes */
+@media only screen and (max-width: 700px) {
+  .skill-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid #6591996e;
+    transition: transform 0.2s; /* Animation */
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .skill-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 2px;
+    border: 2px solid #6591996e;
+    transition: transform 0.2s; /* Animation */
+  }
+}
